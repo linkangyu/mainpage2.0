@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow">
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/touxiang" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="110dp"
+                android:orientation="horizontal">
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:id="@+id/showdaka_continue"
+                    android:layout_width="58dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="23"
+                    android:textSize="30dp"/>
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:id="@+id/showdaka"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="center"
+                    android:text="62"
+                    android:textSize="30dp" />
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:id="@+id/showrecordcount"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="center"
+                    android:text="62"
+                    android:textSize="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="170dp"
+                android:orientation="horizontal">
+
+                <com.example.smilewithu.mainpage.MyTextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已连续打卡" />
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="记账总天数" />
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="记账总笔数" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightslategrey" />
+
+        <LinearLayout
+            android:id="@+id/lookgraph_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="lookgraph"
+
+            >
+
+            <ImageView
+                android:id="@+id/tubiao_image"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tubiao" />
+
+            <TextView
+                android:id="@+id/tubiao_text"
+                android:layout_width="309dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+
+                android:text="过去两周收支分析图表"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/youjiantou_image"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/youjiantou" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--添加一张欢迎界面的背景-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff00"
+    >
+    <com.example.smilewithu.mainpage.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轻记账\n简生活\n欢迎使用轻记账！"
+        android:textColor="#050505"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/imageview" />
+    <com.example.smilewithu.mainpage.MyTextView
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/iv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#050505"
+        android:layout_centerHorizontal="true"
+        android:text="轻记账"
+        />
+
+    <com.example.smilewithu.mainpage.MyTextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="192dp"
+        android:singleLine="false"
+        android:text="制作人：\n李嘉鸣\n刘硕\n林康宇"
+        android:textColor="#050505"
+        android:textSize="20sp" />
+
+    <com.example.smilewithu.mainpage.MyTextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="版本2.0"
+        android:textColor="#050505"
+        android:textSize="20sp" />
+</RelativeLayout>

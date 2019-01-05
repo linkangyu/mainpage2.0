@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.smilewithu.mainpage.ChooseActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/yellow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yellow"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:id="@+id/textView"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.96"
+                    android:text="支出 "
+                    android:textAlignment="textEnd"
+                    android:clickable="true"
+                    android:onClick="zhichu"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <com.example.smilewithu.mainpage.MyTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.96"
+                    android:text=" 收入"
+                    android:textAlignment="textStart"
+                    android:clickable="true"
+               android:onClick="shouru"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewpager_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="497dp">
+
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.example.smilewithu.mainpage.MyTextView
+            android:id="@+id/textView5"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="can"
+            android:text="取消"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0"
+
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
